@@ -39,12 +39,13 @@ export default function SignUpForm(props) {
 
   return (
     <>
+    <div className="form-container">
       <h2>Sign Up</h2>
       {error && <p>{error}</p>}
       {signedUpUsername && (
         <p>Thank you for signing up, {signedUpUsername}!</p>
       )}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <label>
           Username:{" "}
           <input
@@ -62,6 +63,7 @@ export default function SignUpForm(props) {
         </label>
         <button>Submit</button>
       </form>
+      </div>
     </>
   );
 }

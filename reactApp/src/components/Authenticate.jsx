@@ -28,7 +28,7 @@ export default function Authenticate({ token }) {
 	}
   
 	return (
-	<div>	
+	<div className="authenticate-container">	
 		<h2>Authenticate</h2>
 		{successMessage && <p>{successMessage}</p>}
 		{error && <p>{error}</p>}
